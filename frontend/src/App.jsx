@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import io from "socket.io-client";
 import SimplePeer from "simple-peer/simplepeer.min.js";
-const socket = io("http://localhost:5000/");
+const socket = io("https://video-call-fx6d.onrender.com/");
 const App = () => {
   useEffect(() => {
     socket.on("connect", () => {
